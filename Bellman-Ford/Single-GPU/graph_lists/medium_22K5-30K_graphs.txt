@@ -1,4 +1,0 @@
-official-graphs/5K-40K/medium/22500-vertices_degree-113_csr.bin
-official-graphs/5K-40K/medium/25000-vertices_degree-125_csr.bin
-official-graphs/5K-40K/medium/27500-vertices_degree-138_csr.bin
-official-graphs/5K-40K/medium/30000-vertices_degree-150_csr.bin
