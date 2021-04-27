@@ -1,0 +1,11 @@
+official-graphs/5K-40K/medium/5000-vertices_degree-25_csr.bin
+official-graphs/5K-40K/medium/5500-vertices_degree-28_csr.bin
+official-graphs/5K-40K/medium/6000-vertices_degree-30_csr.bin
+official-graphs/5K-40K/medium/6500-vertices_degree-33_csr.bin
+official-graphs/5K-40K/medium/7000-vertices_degree-35_csr.bin
+official-graphs/5K-40K/medium/7500-vertices_degree-38_csr.bin
+official-graphs/5K-40K/medium/8000-vertices_degree-40_csr.bin
+official-graphs/5K-40K/medium/8500-vertices_degree-43_csr.bin
+official-graphs/5K-40K/medium/9000-vertices_degree-45_csr.bin
+official-graphs/5K-40K/medium/9500-vertices_degree-48_csr.bin
+official-graphs/5K-40K/medium/10000-vertices_degree-50_csr.bin
