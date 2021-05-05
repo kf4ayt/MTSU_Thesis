@@ -1,0 +1,11 @@
+official-graphs/5K-40K/sparse/5000-vertices_degree-5_csr.bin
+official-graphs/5K-40K/sparse/5500-vertices_degree-6_csr.bin
+official-graphs/5K-40K/sparse/6000-vertices_degree-6_csr.bin
+official-graphs/5K-40K/sparse/6500-vertices_degree-7_csr.bin
+official-graphs/5K-40K/sparse/7000-vertices_degree-7_csr.bin
+official-graphs/5K-40K/sparse/7500-vertices_degree-8_csr.bin
+official-graphs/5K-40K/sparse/8000-vertices_degree-8_csr.bin
+official-graphs/5K-40K/sparse/8500-vertices_degree-9_csr.bin
+official-graphs/5K-40K/sparse/9000-vertices_degree-9_csr.bin
+official-graphs/5K-40K/sparse/9500-vertices_degree-10_csr.bin
+official-graphs/5K-40K/sparse/10000-vertices_degree-10_csr.bin
