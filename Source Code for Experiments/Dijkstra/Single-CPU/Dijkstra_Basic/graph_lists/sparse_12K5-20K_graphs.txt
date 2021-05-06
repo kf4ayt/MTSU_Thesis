@@ -1,4 +1,0 @@
-official-graphs/5K-40K/sparse/12500-vertices_degree-13_csr.bin
-official-graphs/5K-40K/sparse/15000-vertices_degree-15_csr.bin
-official-graphs/5K-40K/sparse/17500-vertices_degree-18_csr.bin
-official-graphs/5K-40K/sparse/20000-vertices_degree-20_csr.bin

@@ -1,4 +1,0 @@
-official-graphs/5K-40K/dense/32500-vertices_degree-813_csr.bin
-official-graphs/5K-40K/dense/35000-vertices_degree-875_csr.bin
-official-graphs/5K-40K/dense/37500-vertices_degree-938_csr.bin
-official-graphs/5K-40K/dense/40000-vertices_degree-1000_csr.bin
