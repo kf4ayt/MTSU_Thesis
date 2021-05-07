@@ -1,0 +1,152 @@
+
+
+Thesis Graph Files Standards
+----------------------------
+
+Filenames:
+---------
+
+Example: 16-vertices_degree-4_csr.bin
+
+Vertices: # of vertices
+
+Degree: SPECIFIED degree - i.e. when creating graph, degree specified was 20. However, due
+                                 to the nature of the random graph generator, not ALL vertices
+                                 may be degree 20, so the number of edges supplied in the graph
+                                 file must be used for the num_edges value.
+
+Graph format: Format in which the graph is stored - mtx or csr
+
+File format: Format of the file itself - binary (bin) or text (txt)
+
+Note: CSR = Compressed Sparse Row
+
+
+General layout:
+--------------
+
+-----------------
+For TEXT files...
+-----------------
+
+For Market Matrix files, the first 3 lines will be:
+
+%%MatrixMarket matrix coordinate integer general
+%
+num_vertices num_vertices num_edges
+
+
+Following those lines will be the edges - one edge per line - in the format of:
+
+u v w
+
+
+For CSR, the layout will be:
+
+num_vertices num_edges
+<blank line>
+V[0]
+V[1]
+.
+.
+.
+V[num_vertices - 1]
+<blank line>
+E[0]
+E[1]
+.
+.
+.
+E[num_edges - 1]
+<blank line>
+W[0]
+W[1]
+.
+.
+.
+W[num_edges - 1]
+
+
+
+-------------------
+For BINARY files...
+-------------------
+
+For Market Matrix files...
+
+num_vertices
+num_edges
+u v w           // note: since this is binary, there will be no spaces
+
+
+For CSR files, the layout will be
+
+num_vertices
+num_edges
+V[0]
+V[1]
+.
+.
+.
+V[num_vertices - 1]
+E[0]
+E[1]
+.
+.
+.
+E[num_edges - 1]
+W[0]
+W[1]
+.
+.
+.
+W[num_edges - 1]
+
+
+Variable sizing for binary files:
+--------------------------------
+
+
+MTX files
+---------
+
+num_vertices - uint32_t
+num_edges    - uint32_t
+
+u, v         - uint32_t
+w            - uint8_t
+
+Thus, for a binary MTX file, the format will be
+
+uint32_t
+uint32_t
+uint32_t uint32_t uint8_t       // Note: there will not be any spaces between the numbers
+
+
+CSR files
+---------
+
+For a binary CSR file, the variable sizes remain the same, so the format is:
+
+num_vertices            // uint32_t
+num_edges               // uint32_t
+V[0]                    // uint32_t
+V[1]
+.
+.
+.
+V[num_vertices - 1]
+E[0]                    // uint32_t
+E[1]
+.
+.
+.
+E[num_edges - 1]
+W[0]                    // uint8_t
+W[1]
+.
+.
+.
+W[num_edges - 1]
+
+
